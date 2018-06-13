@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Pictures from './components/Pictures';
+import WelcomeText from './components/WelcomeText';
 import { Jumbotron } from 'react-bootstrap';
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
       <div className="App">
         <Jumbotron>
           <Pictures />
-          <h1>Hi! My name is Sam Gespass and this is my website!</h1>
+          <WelcomeText />
         </Jumbotron>
       </div>
     );
