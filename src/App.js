@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Pictures from './components/Pictures';
+import { Jumbotron } from 'react-bootstrap';
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +14,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Pictures />
+        <Jumbotron>
+          <Pictures />
+          <h1>Hi! My name is Sam Gespass and this is my website!</h1>
+        </Jumbotron>
       </div>
     );
   }
