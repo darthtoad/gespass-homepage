@@ -1,27 +1,33 @@
 import React, { Component } from 'react';
 import sam1 from '../assets/images/Sam1.jpeg';
 import sam2 from '../assets/images/Sam2.jpeg';
-import sam3 from '../assets/images/Sam3.jpeg'
-import styles from '../assets/styles/styles.css'
+import sam3 from '../assets/images/Sam3.jpeg';
+import styles from '../assets/styles/styles.css';
+import Fade from 'react-reveal';
 
-export default class Welcome extends Component {
-    changeImage() {
-        setInterval(() => {
-            let image = this.state.image;
-            if (this.state.image < 3) {
-                image++;
+const images = [
+    sam1,
+    sam2,
+    sam3
+]
+
+export default class Pictures extends Component {
+
+    changeImage() { setInterval(() =>{
+            if (this.state.image === images.length) {
+                this.setState({image: 0})
             } else {
-                image = 1;
-            }
-            this.setState({image: image});
-        }, 3000);
+                this.setState({ image: this.state.image + 1})
+            }}, 1000
+        )
     }
+
+    state = {
+                image: 0
+            }
 
     constructor(props) {
         super(props);
-        this.state = {
-            image: 1,
-        }
         this.changeImage = this.changeImage.bind(this);
         this.changeImage();
     }
@@ -41,7 +47,9 @@ export class Sam1 extends Component {
     render () {
         return (
             <div className="samImageContainer">
-                <img src={sam1} className="sam1"/>
+                <Fade left>
+                    <img src={sam1} className="sam1"/>
+                </Fade>
             </div>
         )
     }
@@ -51,7 +59,9 @@ export class Sam2 extends Component {
     render () {
         return (
             <div className="samImageContainer">
-                <img src={sam2} className="sam2"/>
+                <Fade top>
+                    <img src={sam2} className="sam2"/>
+                </Fade>
             </div>        
         )
     }
@@ -61,7 +71,9 @@ export class Sam3 extends Component {
     render() {
         return (
             <div className="samImageContainer">
-                <img src={sam3} className="sam3" height="200" width="200" />
+                <Fade right>
+                    <img src={sam3} className="sam3" height="200" width="200" />
+                </Fade>
             </div>
         )
     }
