@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Pictures from './components/Pictures';
-import WelcomeText from './components/WelcomeText';
+import Pictures from './components/Pictures/Pictures';
+import WelcomeText from './components/WelcomeText/WelcomeText';
 import { Jumbotron } from 'react-bootstrap';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Jumbotron>
+        <Jumbotron className="Jumbotron">
           <Pictures />
           <WelcomeText />
         </Jumbotron>

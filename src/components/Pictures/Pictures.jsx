@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import sam1 from '../assets/images/Sam1.jpeg';
-import sam2 from '../assets/images/Sam2.jpeg';
-import sam3 from '../assets/images/Sam3.jpeg';
-import styles from '../assets/styles/styles.css';
+import sam1 from '../../assets/images/Sam1.jpeg';
+import sam2 from '../../assets/images/Sam2.jpeg';
+import sam3 from '../../assets/images/Sam3.jpeg';
+import './styles.css';
 import Fade from 'react-reveal';
 
 const images = [
