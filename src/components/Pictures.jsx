@@ -14,7 +14,7 @@ const images = [
 export default class Pictures extends Component {
 
     changeImage() { setInterval(() =>{
-            if (this.state.image === images.length) {
+            if (this.state.image === images.length - 1) {
                 this.setState({image: 0})
             } else {
                 this.setState({ image: this.state.image + 1})
