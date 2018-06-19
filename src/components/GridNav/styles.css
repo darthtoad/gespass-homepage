@@ -1,0 +1,9 @@
+.grid {
+    color: #72c3df;
+    font-size: 15pt;
+}
+
+.inner-grid {
+    background-color: black;
+    border: 5px outset #72c3df;
+}

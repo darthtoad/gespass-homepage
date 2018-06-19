@@ -10,12 +10,6 @@ class App extends Component {
     super(props);
   }
 
-
-
-  showProjects = () => {
-    this.setState({show: "projects"});
-  }
-
   render() {
     return (
       <div className="App">
