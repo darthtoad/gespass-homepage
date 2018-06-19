@@ -6,18 +6,28 @@ import GridNav from './components/GridNav/GridNav';
 import { Jumbotron } from 'react-bootstrap';
 
 class App extends Component {
+  hideIntro = () => {
+    this.setState({showIntro: false});
+  }
+
+  state = {
+    showIntro: true,
+  }
   constructor(props) {
     super(props);
   }
 
   render() {
+    let show = this.state.showIntro;
     return (
       <div className="App">
-        <Jumbotron className="Jumbotron">
-          <Pictures />
-          <WelcomeText />
-        </Jumbotron>
-        <GridNav />
+        {show &&
+          <Jumbotron className="Jumbotron">
+            <Pictures />
+            <WelcomeText />
+          </Jumbotron>
+        }
+        <GridNav show={this.showIntro} hide={this.hideIntro} />
       </div>
     );
   }

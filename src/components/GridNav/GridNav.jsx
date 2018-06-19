@@ -2,23 +2,31 @@ import React, { Component } from 'react';
 import './styles.css';
 import Fade from 'react-reveal';
 import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
+import Projects from './../Projects/Projects';
+import About from './../About/About';
+import Contact from './../Contact/Contact';
+import Resume from './../Resume/Resume';
 
 
 export default class GridNav extends Component {
     showProjects = () => {
         this.setState({show: "projects"});
+        this.props.hide();
     }
 
     showAbout = () => {
         this.setState({show: "about"});
+        this.props.hide();
     }
     
     showResume = () => {
         this.setState({show: "resume"});
+        this.props.hide();
     }
 
     showContact = () => {
         this.setState({show: "contact"})
+        this.props.hide();
     }
 
     constructor(props) {
@@ -52,19 +60,19 @@ export default class GridNav extends Component {
                 </Fade>
                 {
                     this.state.show === 'projects' &&
-                        <p>Poop</p>            
+                        <Projects />            
                 }
                 {
                     this.state.show === "about" &&
-                        <p>Pee</p>
+                        <About />
                 }
                 {
                     this.state.show === "resume" &&
-                        <p>Fart</p>
+                        <Resume />
                 }
                 {
                     this.state.show === "contact" &&
-                        <p>Fuck</p>
+                        <Contact />
                 }
             </div>
         )

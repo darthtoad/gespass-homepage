@@ -11,6 +11,8 @@ const images = [
     sam3
 ]
 
+let changeImage;
+
 export default class Pictures extends Component {
 
     changeImage() { setInterval(() =>{
@@ -28,8 +30,11 @@ export default class Pictures extends Component {
 
     constructor(props) {
         super(props);
-        this.changeImage = this.changeImage.bind(this);
-        this.changeImage();
+        changeImage = this.changeImage();
+    }
+
+    componentWillUnmount() {
+        clearInterval(changeImage);
     }
 
     render() {
