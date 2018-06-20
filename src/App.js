@@ -13,9 +13,6 @@ class App extends Component {
   state = {
     showIntro: true,
   }
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     let show = this.state.showIntro;

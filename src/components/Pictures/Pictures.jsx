@@ -15,7 +15,7 @@ let changeImage;
 
 export default class Pictures extends Component {
 
-    changeImage() { setInterval(() =>{
+    changeImage() { setInterval(() => {
             if (this.state.image === images.length - 1) {
                 this.setState({image: 0})
             } else {
@@ -25,8 +25,8 @@ export default class Pictures extends Component {
     }
 
     state = {
-                image: 0
-            }
+        image: 0
+    }
 
     constructor(props) {
         super(props);
@@ -53,7 +53,7 @@ export class Sam1 extends Component {
         return (
             <div className="samImageContainer">
                 <Fade left>
-                    <img src={sam1} className="sam1"/>
+                    <img src={sam1} className="sam1" alt="Sam Gespass"/>
                 </Fade>
             </div>
         )
@@ -65,7 +65,7 @@ export class Sam2 extends Component {
         return (
             <div className="samImageContainer">
                 <Fade top>
-                    <img src={sam2} className="sam2"/>
+                    <img src={sam2} className="sam2" alt="Sam Gespass"/>
                 </Fade>
             </div>        
         )
@@ -77,7 +77,7 @@ export class Sam3 extends Component {
         return (
             <div className="samImageContainer">
                 <Fade right>
-                    <img src={sam3} className="sam3" height="200" width="200" />
+                    <img src={sam3} className="sam3" height="200" width="200" alt="Sam Gespass"/>
                 </Fade>
             </div>
         )

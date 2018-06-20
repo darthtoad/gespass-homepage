@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 import Fade from 'react-reveal';
-import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import Projects from './../Projects/Projects';
 import About from './../About/About';
 import Contact from './../Contact/Contact';
@@ -27,10 +27,6 @@ export default class GridNav extends Component {
     showContact = () => {
         this.setState({show: "contact"})
         this.props.hide();
-    }
-
-    constructor(props) {
-        super(props);
     }
   
     state = {
