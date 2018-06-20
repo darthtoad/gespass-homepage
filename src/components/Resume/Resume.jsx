@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 import Bounce from 'react-reveal/Bounce';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
 
 export default class Resume extends Component {
     render() {
@@ -9,53 +9,77 @@ export default class Resume extends Component {
             <div>
                 <Bounce>
                     <Jumbotron className="jumbotron">
-                        SAMUEL GESPASS
+                        <h1>SAMUEL GESPASS</h1>
 
-                        +1 412 335 7592 Samuel.Gespass@gmail.com LinkedIn: /sam-gespass Github: /darthtoad
+                        <h2>SUMMARY</h2>
 
-                        SUMMARY
+                        <p className="text summary-text">Junior Developer currently working with Java, Android, Javascript, Angular, and React, bringing communication and interpersonal skills from previous work as an ESL and history teacher</p>
 
-                        Junior Developer currently working with Java, Android, Javascript, Angular, and React, bringing communication and interpersonal skills from previous work as an ESL and history teacher
+                        <h3>SKILLS</h3>
 
-                        SKILLS
+                        <ul className="text list">
+                            <Grid>
+                                <Row>
+                                    <Col md={3}>
+                                        <li>Java</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                    </Col>
+                                    <Col md={3}>
+                                        <li>jQuery</li>
+                                        <li>Android</li>
+                                        <li>React</li>
+                                        <li>React Native</li>
+                                    </Col>
+                                    <Col md={3}>
+                                        <li>PostgreSQL</li>
+                                        <li>Angular</li>
+                                        <li>Firebase</li>
+                                        <li>Bootstrap</li>
+                                    </Col>
+                                    <Col md={3}>
+                                        <li>Materialize</li>
+                                        <li>Git</li>
+                                        <li>Github</li>
+                                        <li>Spark Web Framework</li>
+                                    </Col>
+                                </Row>
+                            </Grid>
+                        </ul>
 
-                        Java, HTML, CSS, Javascript, jQuery, PostgreSQL, Android, React, React Native, Angular, Firebase, Bootstrap, Materialize, Git, Github, Spark Web Framework, Microsoft Office
+                        <h3>EDUCATION</h3>
 
-                        PROJECTS
+                        <h4>Epicodus, Portland, OR</h4>			<h4>June 2018</h4>
+                        <h5>Java/JavaScript/Android web development certification</h5>
+                        <ul className="text list">
+                            <li>Gained over 1000+ hours of pair-programming-centered design and coding experience</li>
+                            <li>Acquired a certificate in web development with a focus on Java and Android as well as material in Javascript using tools such as Bootstrap, jQuery, HTML/CSS and Angular</li>
+                            <li>Learned best practices in coding and in version control with Git/Github</li>
+                        </ul>
 
-                        Word Up - https://github.com/darthtoad/WordUp
-                        An Android app that gives information about words and lets users save their favorite words
+                        <h4>School of Teaching ESL, Seattle, WA</h4>
+                        <h4>September 2015</h4>
+                        <h5>TESOL Certificate (in cooperation with Seattle Pacific University)</h5>
+                        <p className="text">120 hours of instruction and 6 hours of field experience</p>
 
-                        Remote Classroom - https://github.com/darthtoad/RemoteClassroomOpenTok
-                        An Android app for teaching foreign languages
+                        <h4>St. John’s College, Annapolis, MD</h4>							          <h4>2009</h4>
+                        <h5>Bachelor of Arts Degree in Liberal Arts</h5>
+                        <p className="text">Comprehensive classical curriculum, including philosophy, Ancient Greek, history of math and science, music, and literature</p>
 
-                        EDUCATION
+                        <h3>EXPERIENCE</h3>
 
-                        Epicodus, Portland, OR						     November 2017 - June 2018
-                        Java/JavaScript/Android web development certification
-                        Gained over 1000+ hours of pair-programming-centered design and coding experience
-                        Acquired a certificate in web development with a focus on Java and Android as well as material in Javascript using tools such as Bootstrap, jQuery, HTML/CSS and Angular
-                        Learned best practices in coding and in version control with Git/Github
+                        <h4>Mobile Development Intern</h4>	
+                        <h4>April - June 2018</h4>
+                        <h4>Hot Pepper Studios, Portland, Oregon</h4>
+                        <p className="text">Develop a React Native app using Expo
+                        Collaborate with coworkers using Git and BitBucket</p>
 
-                        School of Teaching ESL, Seattle, WA					           September 2015
-                        TESOL Certificate (in cooperation with Seattle Pacific University)
-                        120 hours of instruction and 6 hours of field experience
-
-                        St. John’s College, Annapolis, MD							           	    2009
-                        Bachelor of Arts Degree in Liberal Arts
-                        Comprehensive classical curriculum, including philosophy, Ancient Greek, history of math and science, music, and literature.
-
-                        EXPERIENCE
-
-                        Mobile Development Intern							           April - June 2018
-                        Hot Pepper Studios, Portland, Oregon
-                        Develop a React Native app using Expo
-                        Collaborate with coworkers using Git and BitBucket
-
-                        English as a Foreign Language Instructor			         January 2017 – July 2017
-                        Linguatec, San Luis Potosi, Mexico
-                        Develop and deliver lesson plans that utilize a broad range of teaching techniques and strategies
-                        Adapt curriculum to provide instruction for individuals and small groups of students
+                        <h4>English as a Foreign Language Instructor</h4>
+                        <h4>January 2017 – July 2017</h4>
+                        <h4>Linguatec, San Luis Potosi, Mexico</h4>
+                        <p className="text">Develop and deliver lesson plans that utilize a broad range of teaching techniques and strategies</p>
+                        <p className="text">Adapt curriculum to provide instruction for individuals and small groups of students</p>
                     </Jumbotron>
                 </Bounce>
             </div>
