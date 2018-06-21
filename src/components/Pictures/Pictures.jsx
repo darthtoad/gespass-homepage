@@ -20,7 +20,7 @@ export default class Pictures extends Component {
                 this.setState({image: 0})
             } else {
                 this.setState({ image: this.state.image + 1})
-            }}, 1000
+            }}, 3000
         )
     }
 

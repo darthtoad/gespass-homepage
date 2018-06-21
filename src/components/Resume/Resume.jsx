@@ -48,6 +48,21 @@ export default class Resume extends Component {
                             </Grid>
                         </ul>
 
+
+                        <h3>EXPERIENCE</h3>
+
+                        <h4>Mobile Development Intern</h4>	
+                        <h4>April - June 2018</h4>
+                        <h4>Hot Pepper Studios, Portland, Oregon</h4>
+                        <p className="text">Develop a React Native app using Expo
+                        Collaborate with coworkers using Git and BitBucket</p>
+
+                        <h4>English as a Foreign Language Instructor</h4>
+                        <h4>January 2017 – July 2017</h4>
+                        <h4>Linguatec, San Luis Potosi, Mexico</h4>
+                        <p className="text">Develop and deliver lesson plans that utilize a broad range of teaching techniques and strategies</p>
+                        <p className="text">Adapt curriculum to provide instruction for individuals and small groups of students</p>
+
                         <h3>EDUCATION</h3>
 
                         <h4>Epicodus, Portland, OR</h4>			<h4>June 2018</h4>
@@ -66,20 +81,6 @@ export default class Resume extends Component {
                         <h4>St. John’s College, Annapolis, MD</h4>							          <h4>2009</h4>
                         <h5>Bachelor of Arts Degree in Liberal Arts</h5>
                         <p className="text">Comprehensive classical curriculum, including philosophy, Ancient Greek, history of math and science, music, and literature</p>
-
-                        <h3>EXPERIENCE</h3>
-
-                        <h4>Mobile Development Intern</h4>	
-                        <h4>April - June 2018</h4>
-                        <h4>Hot Pepper Studios, Portland, Oregon</h4>
-                        <p className="text">Develop a React Native app using Expo
-                        Collaborate with coworkers using Git and BitBucket</p>
-
-                        <h4>English as a Foreign Language Instructor</h4>
-                        <h4>January 2017 – July 2017</h4>
-                        <h4>Linguatec, San Luis Potosi, Mexico</h4>
-                        <p className="text">Develop and deliver lesson plans that utilize a broad range of teaching techniques and strategies</p>
-                        <p className="text">Adapt curriculum to provide instruction for individuals and small groups of students</p>
                     </Jumbotron>
                 </Bounce>
             </div>
