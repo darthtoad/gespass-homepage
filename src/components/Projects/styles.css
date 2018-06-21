@@ -4,3 +4,17 @@
     margin-top: 25px;
     border: 5px outset #72c3df
 }
+
+.projects {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
