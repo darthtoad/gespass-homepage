@@ -25,7 +25,7 @@ export default class Projects extends Component {
       
     updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }  
+    }
     
     state = {
         width: 0,

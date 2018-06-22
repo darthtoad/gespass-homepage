@@ -25,7 +25,16 @@ export default class About extends Component {
       
     updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }  
+    }
+
+    renderContentTop() {
+        return (
+            <div>
+                <h1>About me</h1>
+                <p className="about">My name is Sam. I am currently looking for a position as a developer. I graduated from the Android/Java/Javascript track at Epicodus in Portland, OR. I'm currently with my girlfriend in Mexico, but I'm willing to take a job anywhere. We have three dogs: Olivia, Felipe, and Mafalda. They are very cute! My favorite food is barbacoa de borrego.</p>
+            </div>
+        )
+    }
     
     state = {
         width: 0,
@@ -38,12 +47,10 @@ export default class About extends Component {
                 <Bounce>
                     { this.state.width > 500 ?
                         <Jumbotron>
-                            <h1>About me</h1>
-                            <p className="about">My name is Sam. I am currently looking for a position as a developer. I graduated from the Android/Java/Javascript track at Epicodus in Portland, OR. I'm currently with my girlfriend in Mexico, but I'm willing to take a job anywhere. We have three dogs: Olivia, Felipe, and Mafalda. They are very cute! My favorite food is barbacoa de borrego.</p>
+                            {this.renderContentTop()}
                         </Jumbotron> :
                         <Jumbotron style={jumbotron} bsStyle="custom">
-                            <h1>About me</h1>
-                            <p className="about">My name is Sam. I am currently looking for a position as a developer. I graduated from the Android/Java/Javascript track at Epicodus in Portland, OR. I'm currently with my girlfriend in Mexico, but I'm willing to take a job anywhere. We have three dogs: Olivia, Felipe, and Mafalda. They are very cute! My favorite food is barbacoa de borrego.</p>
+                            {this.renderContentTop()}
                         </Jumbotron>
                     }
                 </Bounce>

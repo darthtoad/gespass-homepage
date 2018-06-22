@@ -132,8 +132,6 @@ export default class Resume extends Component {
                                                 <li>HTML</li>
                                                 <li>CSS</li>
                                                 <li>Javascript</li>
-                                            </Col>
-                                            <Col md={3}>
                                                 <li>jQuery</li>
                                                 <li>Android</li>
                                                 <li>React</li>
@@ -144,8 +142,6 @@ export default class Resume extends Component {
                                                 <li>Angular</li>
                                                 <li>Firebase</li>
                                                 <li>Bootstrap</li>
-                                            </Col>
-                                            <Col md={3}>
                                                 <li>Materialize</li>
                                                 <li>Git</li>
                                                 <li>Github</li>

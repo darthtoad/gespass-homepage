@@ -25,7 +25,7 @@ export default class Contact extends Component {
       
     updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }  
+    }
     
     state = {
         width: 0,
