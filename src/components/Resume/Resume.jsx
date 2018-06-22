@@ -36,7 +36,7 @@ export default class Resume extends Component {
         return (
             <div>
                 <Bounce>
-                    { this.state.width >= 500 ?
+                    { this.state.width >= 592 ?
                         <div>
                             <Jumbotron>
                                 <h1>SAMUEL GESPASS</h1>
