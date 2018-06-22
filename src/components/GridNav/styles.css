@@ -12,3 +12,9 @@
     opacity: .8;
     border: 5px solid #72c3df;
 }
+
+.small-grid {
+    color: #72c3df;
+    background-color: black;
+    border: 5px outset #72c3df;
+}

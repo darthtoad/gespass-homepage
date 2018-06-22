@@ -2,18 +2,57 @@ import React, { Component } from 'react';
 import './styles.css';
 import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
 import Bounce from 'react-reveal/Bounce';
+import { bootstrapUtils } from 'react-bootstrap/lib/utils/';
+import { jumbotron } from './../../assets/styles/bootstrapStyles.js'
 
 export default class Projects extends Component {
+    constructor(props) {
+        super(props);
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+        if (this.state.width <= 500) {
+            bootstrapUtils.addStyle(Jumbotron, 'custom');
+        }
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+      
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }  
+    
+    state = {
+        width: 0,
+        height: 0
+    }
     
     render() {
         return (
             <div>
                 <Bounce>
-                    <Jumbotron className="jumbotron">
-                        <h1>Here are some of my projects</h1>
-                        <br />
-                        <a className="github" href="https://github.com/darthtoad"><h3>See my Github</h3></a>
-                    </Jumbotron>
+                    { this.state.width <= 500 ?
+                        <div>
+                            <Jumbotron style={jumbotron} bsStyle="custom">
+                                <h1>Here are some of my projects</h1>
+                                <br />
+                                <a className="github" href="https://github.com/darthtoad"><h3>See my Github</h3></a>
+                            </Jumbotron>
+                        </div>
+                        :
+                        <div>
+                            <Jumbotron>
+                                <h1>Here are some of my projects</h1>
+                                <br />
+                                <a className="github" href="https://github.com/darthtoad"><h3>See my Github</h3></a>
+                            </Jumbotron>
+                        </div>
+                    }
                     <div className="projects">
                         <Grid>
                             <Row className="row">
